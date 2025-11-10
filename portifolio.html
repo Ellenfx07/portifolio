@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Seu Nome</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top left, #1a1a2e, #16213e 70%);
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .foto {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #00adb5;
+      object-fit: cover;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      margin-bottom: 1rem;
+      transition: transform 0.4s;
+    }
+
+    .foto:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #b5b5b5;
+      opacity: 0.9;
+    }
+
+    
+    section {
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 1rem 0;
+      width: 90%;
+      max-width: 850px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(6px);
+      animation: fadeUp 1s ease;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #00adb5;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+
+    li {
+      margin: 0.6rem 0;
+      font-size: 1rem;
+      color: #e0e0e0;
+    }
+
+    .projetos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .projeto {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 15px;
+      padding: 1.5rem;
+      width: 100%;
+      max-width: 750px;
+      text-align: left;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .projeto:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .projeto img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .projeto h4 {
+      margin-bottom: 0.5rem;
+      color: #00adb5;
+      font-weight: 600;
+    }
+
+    .projeto p {
+      font-size: 0.95rem;
+      color: #cfcfcf;
+    }
+
+    .contato p strong {
+      color: #00adb5;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 0.95rem; }
+      section { padding: 1.5rem; }
+      .foto { width: 120px; height: 120px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="ellen.jpg" alt="Foto de perfil" class="foto">
+    <h1>Ellen Ribeiro de Castro</h1>
+    <h2>Desenvolvedora | Criadora em Constante Evolução | Apaixonada por Desenvolvimento de Jogos</h2>
+  </header>
+
+  <section class="sobre">
+    <h3>✨ Sobre Mim</h3>
+    <p>
+    Sou apaixonada por tecnologia, design e inovação. Acredito que cada ideia pode se transformar em algo incrível quando combinamos criatividade, planejamento e propósito. Gosto de transformar conceitos em soluções funcionais e visualmente atraentes, sempre com foco na experiência do usuário e na eficiência do resultado final.
+  </p>
+  <p>
+    Tenho um grande interesse por aprender continuamente — seja explorando novas ferramentas, linguagens ou tendências do mercado. Valorizo a colaboração, o compartilhamento de conhecimento e o trabalho em equipe, pois acredito que as melhores ideias surgem quando diferentes perspectivas se encontram.
+  </p>
+  <p>
+    Em cada projeto, busco unir estética e usabilidade, criando interfaces intuitivas, modernas e impactantes. Meu objetivo é evoluir constantemente como profissional, contribuindo para o desenvolvimento de soluções criativas que realmente façam a diferença na vida das pessoas.
+  </p>
+</section>
+
+  <section class="habilidades">
+    <h3>💡 Habilidades</h3>
+  <ul>
+    <li><strong>Desenvolvimento Web:</strong> domínio de HTML, CSS e JavaScript, criando interfaces modernas, responsivas e voltadas à experiência do usuário.</li>
+    <li><strong>Linguagens de Programação:</strong> conhecimento em Dart, Python e Java, aplicando boas práticas de código e lógica de programação.</li>
+    <li><strong>Comunicação e Colaboração:</strong> facilidade para trabalhar em equipe, compartilhar ideias e contribuir em ambientes multidisciplinares.</li>
+    <li><strong>Gestão de Tempo e Produtividade:</strong> organização e foco para cumprir prazos e alcançar resultados de forma eficiente.</li>
+    <li><strong>Aprendizado Contínuo e Adaptabilidade:</strong> curiosidade e disposição constante para explorar novas tecnologias e aprimorar habilidades.</li>
+  </ul>
+</section>
+
+
+  <section class="projetos">
+    <h3>🚀 Projetos em Destaque</h3>
+
+    <div class="projeto">
+      <img src="tela-login.jpg" alt="Imagem do Projeto 1">
+      <h4>Comunicação Sem Barreiras</h4>
+      <p>
+  Aplicativo desenvolvido para promover a comunicação e a conexão entre crianças por meio de uma fala alternativa simples, intuitiva e inclusiva. 
+  O projeto tem como objetivo facilitar a expressão de crianças com dificuldades de fala, proporcionando uma ferramenta acessível, acolhedora e fácil de usar no dia a dia.
+</p>
+</div>
+
+    <div class="projeto">
+      <img src="tela-cadastro.png" alt="Imagem do Projeto 2">
+      <h4>Site de Cadastros </h4>
+      <p>Aplicação web desenvolvida para gerenciar informações de produtos e clientes de forma simples e eficiente. Permite o cadastro, edição, exclusão e listagem de dados, com foco em usabilidade e organização..</p>
+    </div>
+
+    
+  </section>
+
+  <section class="contato">
+    <h3>📬 Contato</h3>
+    <p>Interessado em colaborar ou conversar?</p>
+    <p>Email: <strong>seuemail@exemplo.com</strong></p>
+    <p>GitHub: <strong>https://github.com/Ellenfx07</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ellen Ribeiro de Castro — Criado com 💙 tecnologia e criatividade</p>
+  </footer>
+</body>
+</html>
+
